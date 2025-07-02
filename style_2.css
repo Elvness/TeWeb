@@ -154,3 +154,46 @@ body.thunderstorm {
   background: linear-gradient(135deg, #2c2c54, #4b4b8a); /* dramatic dark purple */
   color: #ffffff;
 }
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+    justify-content: flex-start;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+
+  .input-group input,
+  .input-group button {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .weather-card {
+    padding: 20px 15px;
+  }
+
+  .weather-card .temperature {
+    font-size: 2.5em;
+  }
+
+  .weather-card .condition {
+    font-size: 1.3em;
+  }
+
+  .forecast-day {
+    width: 80px;
+    padding: 10px;
+  }
+
+  .forecast-day h4 {
+    font-size: 0.9em;
+  }
+
+  .forecast-day p {
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style_2.css" />
+</head>
+<body>
+<div class="weather-container">
+  <h1>🌦 Weather Now & Forecast</h1>
+
+  <div class="weather-card-wrapper">
+    <div class="input-group">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button onclick="getWeather()">Get Weather</button>
+    </div>
+
+    <div class="weather-card" id="weatherCard">
+      <div class="location" id="location">📍 --</div>
+      <div class="temperature" id="temperature">--°C</div>
+      <div class="condition" id="condition">--</div>
+      <div class="details">
+        <p id="wind">Wind: -- km/h</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="forecast" id="forecast">
+    <!-- Forecast goes here -->
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
